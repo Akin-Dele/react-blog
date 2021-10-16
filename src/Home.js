@@ -3,8 +3,8 @@ import useFetch from './useFetch';
 
 const Home = () => {
     const title = 'All Blogs';
-    const url = 'http://localhost:8000/blogs';
-    const { error, isLoading, data: blogs } = useFetch(url);
+    const allBlogs = 'http://localhost:8000/blogs';
+    const { error, isLoading, data: blogs } = useFetch(allBlogs);
 
     //Delete Items from the blog list
     // const handleDelete = (id) => {
